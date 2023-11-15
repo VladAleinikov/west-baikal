@@ -58,8 +58,17 @@ h2 {
 }
 
 h3 {
-      font-size: 9px;
+      position: relative;
+      margin-left: 60px;
+      font-size: 18px;
+      font-weight: 600;
       color: #515487;
+      text-align: center;
+}
+h3 img {
+      position: absolute;
+      left: -60px;
+      top: 5px;
 }
 
 h4 {
@@ -261,7 +270,7 @@ h4 {
       text-align: center;
 }
 
-/* -------------------------- Стили секции достопримечательности -------------------------- */
+/* -------------------------- Стили секции вопросов -------------------------- */
 .questions {
       background-image: url("./assets/bg/questions-bg.png");
       background-repeat: no-repeat;
@@ -298,16 +307,87 @@ h4 {
       line-height: 1.2;
       text-align: center;
 }
-.questions__form{
+.questions__form {
       width: 100%;
       display: flex;
       flex-direction: row;
 }
-.form__input{
+.form__input {
       width: 100%;
       min-width: 200px;
       padding: 0 10px;
 }
-.form__input:nth-child(1){
+.form__input:nth-child(1) {
       margin-right: 15px;
+}
+
+/* -------------------------- Стили секции экскурсий -------------------------- */
+.excursions-container {
+      margin-top: 25px;
+      margin-bottom: 110px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 85px;
+}
+.excursions__title .title__img {
+      width: 70px;
+      height: 70px;
+}
+.excursions__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+}
+.excursions__item {
+      display: flex;
+      flex-direction: column;
+      max-width: 360px;
+      padding: 0 5px;
+}
+.excursions__item:nth-child(1),
+.excursions__item:nth-child(2),
+.excursions__item:nth-child(4) {
+      border-right: 4px solid #515487;
+}
+.excursions__item:nth-child(4),
+.excursions__item:nth-child(5) {
+      border-top: 4px solid #515487;
+}
+.excursions__item .title__img {
+      width: 57px;
+      height: 34px;
+}
+.excursions__item .item__img {
+      margin-bottom: 60px;
+}
+
+.excursions__item .item__duration,
+.excursions__item .item__time {
+      font-size: 18px;
+      font-family: "Segoe UI";
+      color: #757575;
+      font-weight: 600;
+      font-style: italic;
+      line-height: 1.571;
+      text-align: left;
+}
+.excursions__item .item__duration b,
+.excursions__item .item__time b {
+      font-size: 18px;
+      color: #000000;
+      font-weight: 600;
+      font-style: normal;
+      line-height: 1.571;
+      text-align: left;
+}
+.excursions__item .item__text {
+      margin-top: 40px;
+      margin-bottom: 5px;
+      font-size: 18px;
+      font-family: "Myriad Pro";
+      color: #757575;
+      line-height: 1.143;
+      text-align: left;
 }

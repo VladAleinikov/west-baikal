@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+
+/* -------------------------- Удаление ненужных стилей -------------------------- */
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      border: none;
+      color: #5e5e5e;
+      text-decoration: none;
+      font-family: 'Segoe UI';
+}
+
+html {
+      font-size: 11px;
+}
+
+body {
+      position: relative;
+}
+
+img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+}
+
+li {
+      display: block;
+}
+
+a {
+      text-decoration: none;
+}
+
+/* -------------------------- Типография стили -------------------------- */
+
+h1, h1 span {
+      font-size: 19px;
+      color: #ffffff;
+      line-height: 1.3;
+      text-align: center;
+}
+
+h1 span {
+      font-size: 13px;
+}
+
+h2 {
+      font-size: 16px;
+      font-family: "SegoePrint";
+      color: #bd9e46;
+      line-height: 1.2;
+      text-align: center;
+}
+
+h3 {
+      font-size: 9px;
+      color: #515487;
+}
+
+h4 {
+      font-size: 8px;
+      color: #bd9e46;
+}
+
+/* -------------------------- Стили контейнера -------------------------- */
+
+.container {
+      max-width: 1200px;
+      padding: 0 20px;
+      margin: auto;
+}
+
+/* -------------------------- Стили кнопок -------------------------- */
+
+.btn {}
+
+
+
+/* -------------------------- Стили хэдер -------------------------- */
+
+.header-container {
+      max-width: 1380px;
+      padding: 0 40px;
+      
+      height: 100px;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      gap: 80px;
+}
+
+.header__logo {}
+
+.header__contacts {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+}
+
+.contacts__icon {
+      width: 20px;
+      height: 20px;
+}
+
+.contacts__phones {
+      width: fit-content;
+}
+
+.phone__link {}
+
+.navigation__list {
+      display: flex;
+      flex-direction: row;
+}

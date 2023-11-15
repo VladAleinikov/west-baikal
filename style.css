@@ -391,3 +391,44 @@ h4 {
       line-height: 1.143;
       text-align: left;
 }
+
+/* -------------------------- Стили секции галерея -------------------------- */
+.gallery-container {
+      margin-top: 55px;
+      margin-bottom: 370px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+}
+.gallery__text {
+      max-width: 900px;
+      margin: auto;
+      margin-bottom: 50px;
+      max-width: 900px;
+      font-size: 22px;
+      font-weight: 300;
+      color: #5e5e5e;
+      line-height: 1.2;
+      text-align: left;
+}
+.gallery__list {
+      display: grid;
+      grid-template-areas:
+            "a b c"
+            "d b c";
+      justify-content: space-between;
+      align-items: start;
+}
+.gallery__item:nth-child(1) {
+      grid-area: a;
+      margin-bottom: 75px;
+}
+.gallery__item:nth-child(2) {
+      grid-area: b;
+}
+.gallery__item:nth-child(3) {
+      grid-area: c;
+}
+.gallery__item:nth-child(4) {
+      grid-area: d;
+}

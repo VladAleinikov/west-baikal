@@ -63,8 +63,9 @@ h3 {
 }
 
 h4 {
-      font-size: 8px;
+      font-size: 16px;
       color: #515487;
+      text-align: center;
 }
 
 /* -------------------------- Стили контейнера -------------------------- */
@@ -80,7 +81,7 @@ h4 {
 .btn {
       cursor: pointer;
       background-color: #515487;
-      width: 200px;
+      min-width: 200px;
       height: 50px;
 
       font-size: 16px;
@@ -148,7 +149,7 @@ h4 {
       font-family: "Myriad Pro";
 }
 
-/* -------------------------- Стили hero -------------------------- */
+/* -------------------------- Стили первой секции -------------------------- */
 
 .hero {
       background-image: url("./assets/bg/hero-bg.png");
@@ -179,7 +180,7 @@ h4 {
       gap: 20px;
 }
 
-/* -------------------------- Стили об острове -------------------------- */
+/* -------------------------- Стили секции об острове -------------------------- */
 
 .about-container {
       margin-top: 35px;
@@ -208,4 +209,105 @@ h4 {
 .about__text .text__img {
       width: 26px;
       height: 26px;
+}
+
+/* -------------------------- Стили секции достопримечательности -------------------------- */
+.attractions-container {
+      margin-top: 15px;
+      margin-bottom: 85px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+}
+.attractions__title .title__img {
+      width: 64px;
+      height: 64px;
+}
+.attractions__text {
+      max-width: 900px;
+      font-size: 22px;
+      font-weight: 300;
+      color: #5e5e5e;
+      line-height: 1.2;
+      text-align: left;
+      padding-left: 10px;
+      border-left: 4px solid #515487;
+}
+.attractions__places {
+      max-width: 900px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+}
+.places__place {
+      max-width: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+}
+.place__img {
+      margin-bottom: 10px;
+}
+.place__text {
+      font-size: 13px;
+      font-family: "SegoePrint";
+      color: #6f6f6f;
+      line-height: 1.2;
+      text-align: center;
+}
+
+/* -------------------------- Стили секции достопримечательности -------------------------- */
+.questions {
+      background-image: url("./assets/bg/questions-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.qustions-container {
+      padding-top: 90px;
+      padding-bottom: 110px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+}
+.questions__title {
+      font-size: 28px;
+      font-family: "Segoe UI";
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 1.2;
+      text-align: center;
+}
+.questions__title .title__img {
+      width: 46px;
+      height: 34px;
+}
+.questions__text {
+      max-width: 750px;
+      font-size: 17px;
+      font-family: "Segoe UI";
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 1.2;
+      text-align: center;
+}
+.questions__form{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+}
+.form__input{
+      width: 100%;
+      min-width: 200px;
+      padding: 0 10px;
+}
+.form__input:nth-child(1){
+      margin-right: 15px;
 }

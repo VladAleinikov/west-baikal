@@ -12,10 +12,14 @@
 
 html {
       font-size: 11px;
+      overflow: hidden;
 }
 
 body {
       position: relative;
+}
+body.hide{
+      overflow: hidden;
 }
 
 img {
@@ -65,6 +69,7 @@ h3 {
       color: #515487;
       text-align: center;
 }
+
 h3 img {
       position: absolute;
       left: -60px;
@@ -107,11 +112,11 @@ h4 {
       padding: 0 40px;
 
       height: 100px;
+      position: relative;
       display: flex;
       flex-direction: row;
-      justify-content: start;
+      justify-content: space-between;
       align-items: center;
-      gap: 80px;
 }
 
 .header__contacts {
@@ -148,6 +153,7 @@ h4 {
       align-items: center;
       gap: 5px;
 }
+
 .navigation__item .item__img {
       width: 15px;
       height: 15px;
@@ -158,13 +164,52 @@ h4 {
       font-family: "Myriad Pro";
 }
 
+/* -------------------------- Стили для burger menu -------------------------- */
+
+.header__burger {
+      cursor: pointer;
+      display: none;
+      position: relative;
+      width: 30px;
+      height: 20px;
+}
+
+.burger__line {
+      position: absolute;
+      width: 3cqmax;
+      height: 2px;
+      background: #000;
+      transition: 1s;
+}
+
+.burger__line:nth-child(1) {
+      top: 0;
+      left: 0;
+}
+
+.burger__line:nth-child(2) {
+      top: calc(50% - 1px);
+      left: 0;
+}
+
+.burger__line:nth-child(3) {
+      bottom: 0;
+      left: 0;
+}
+
+.header__burger.active .burger__line:nth-child(1) {
+      transform: rotate(90deg);
+}
+
 /* -------------------------- Стили первой секции -------------------------- */
 
 .hero {
       background-image: url("./assets/bg/hero-bg.png");
       background-size: cover;
+      background-position: center;
       background-repeat: no-repeat;
 }
+
 .hero-container {
       min-height: 765px;
       padding-top: 208px;
@@ -174,6 +219,7 @@ h4 {
       justify-content: space-between;
       align-items: center;
 }
+
 .hero__text {
       max-width: 740px;
       font-size: 20px;
@@ -183,6 +229,7 @@ h4 {
       line-height: 1.2;
       text-align: center;
 }
+
 .hero__btns {
       display: flex;
       flex-direction: row;
@@ -200,10 +247,12 @@ h4 {
       align-items: center;
       gap: 30px;
 }
+
 .about__title .title__img {
       width: 75px;
       height: 39px;
 }
+
 .about__text {
       max-width: 900px;
       font-size: 22px;
@@ -231,10 +280,12 @@ h4 {
       align-items: center;
       gap: 20px;
 }
+
 .attractions__title .title__img {
       width: 64px;
       height: 64px;
 }
+
 .attractions__text {
       max-width: 900px;
       font-size: 22px;
@@ -245,6 +296,7 @@ h4 {
       padding-left: 10px;
       border-left: 4px solid #515487;
 }
+
 .attractions__places {
       max-width: 900px;
       width: 100%;
@@ -252,6 +304,7 @@ h4 {
       flex-direction: row;
       justify-content: space-between;
 }
+
 .places__place {
       max-width: 250px;
       display: flex;
@@ -259,9 +312,11 @@ h4 {
       justify-content: center;
       align-content: center;
 }
+
 .place__img {
       margin-bottom: 10px;
 }
+
 .place__text {
       font-size: 13px;
       font-family: "SegoePrint";
@@ -276,6 +331,7 @@ h4 {
       background-repeat: no-repeat;
       background-size: cover;
 }
+
 .qustions-container {
       padding-top: 90px;
       padding-bottom: 110px;
@@ -286,6 +342,7 @@ h4 {
       align-items: center;
       gap: 30px;
 }
+
 .questions__title {
       font-size: 28px;
       font-family: "Segoe UI";
@@ -294,10 +351,12 @@ h4 {
       line-height: 1.2;
       text-align: center;
 }
+
 .questions__title .title__img {
       width: 46px;
       height: 34px;
 }
+
 .questions__text {
       max-width: 750px;
       font-size: 17px;
@@ -307,16 +366,19 @@ h4 {
       line-height: 1.2;
       text-align: center;
 }
+
 .questions__form {
       width: 100%;
       display: flex;
       flex-direction: row;
 }
+
 .form__input {
       width: 100%;
       min-width: 200px;
       padding: 0 10px;
 }
+
 .form__input:nth-child(1) {
       margin-right: 15px;
 }
@@ -330,35 +392,42 @@ h4 {
       align-items: center;
       gap: 85px;
 }
+
 .excursions__title .title__img {
       width: 70px;
       height: 70px;
 }
+
 .excursions__list {
       display: flex;
       flex-direction: row;
       justify-content: center;
       flex-wrap: wrap;
 }
+
 .excursions__item {
       display: flex;
       flex-direction: column;
       max-width: 360px;
       padding: 0 5px;
 }
+
 .excursions__item:nth-child(1),
 .excursions__item:nth-child(2),
 .excursions__item:nth-child(4) {
       border-right: 4px solid #515487;
 }
+
 .excursions__item:nth-child(4),
 .excursions__item:nth-child(5) {
       border-top: 4px solid #515487;
 }
+
 .excursions__item .title__img {
       width: 57px;
       height: 34px;
 }
+
 .excursions__item .item__img {
       margin-bottom: 60px;
 }
@@ -373,6 +442,7 @@ h4 {
       line-height: 1.571;
       text-align: left;
 }
+
 .excursions__item .item__duration b,
 .excursions__item .item__time b {
       font-size: 18px;
@@ -382,6 +452,7 @@ h4 {
       line-height: 1.571;
       text-align: left;
 }
+
 .excursions__item .item__text {
       margin-top: 40px;
       margin-bottom: 5px;
@@ -400,6 +471,7 @@ h4 {
       flex-direction: column;
       gap: 50px;
 }
+
 .gallery__text {
       max-width: 900px;
       margin: auto;
@@ -411,6 +483,7 @@ h4 {
       line-height: 1.2;
       text-align: left;
 }
+
 .gallery__list {
       display: grid;
       grid-template-areas:
@@ -419,16 +492,59 @@ h4 {
       justify-content: space-between;
       align-items: start;
 }
+
 .gallery__item:nth-child(1) {
       grid-area: a;
       margin-bottom: 75px;
 }
+
 .gallery__item:nth-child(2) {
       grid-area: b;
 }
+
 .gallery__item:nth-child(3) {
       grid-area: c;
 }
+
 .gallery__item:nth-child(4) {
       grid-area: d;
+}
+
+/* -------------------------- Стили для 1024px -------------------------- */
+@media (max-width: 1024px) {
+      .header__burger {
+            display: block;
+      }
+
+      .header__navigation {
+            position: absolute;
+            left: 100%;
+            top: 100px;
+            width: 100%;
+            height: calc(100vh - 100px);
+            background: #fff;
+            transition: 1s;
+
+      }
+
+      .header__navigation.active {
+            left: 0;
+      }
+
+      .navigation__list {
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .navigation__item .item__img {
+            width: 20px;
+            height: 20px;
+      }
+
+      .navigation__item .item__link {
+            font-size: 20px;
+            font-family: "Myriad Pro";
+      }
 }
